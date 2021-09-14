@@ -1,4 +1,4 @@
-package xyz.xnmq.securitydemo01.controller;
+package xyz.xnmq.securitydemo02.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

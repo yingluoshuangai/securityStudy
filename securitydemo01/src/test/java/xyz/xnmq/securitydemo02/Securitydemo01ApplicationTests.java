@@ -1,4 +1,4 @@
-package xyz.xnmq.securitydemo01;
+package xyz.xnmq.securitydemo02;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

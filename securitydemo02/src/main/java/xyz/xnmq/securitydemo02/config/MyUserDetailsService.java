@@ -1,4 +1,4 @@
-package xyz.xnmq.securitydemo01.config;
+package xyz.xnmq.securitydemo02.config;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;

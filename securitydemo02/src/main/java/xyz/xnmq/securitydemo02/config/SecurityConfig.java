@@ -1,4 +1,4 @@
-package xyz.xnmq.securitydemo01.config;
+package xyz.xnmq.securitydemo02.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -12,21 +12,22 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 /**
  * @author xnmq
  * @Date 2021/5/12
- * @Description
+ * @Description security 的配置类
+ * 使用内存的方式设置用户名和密码
  */
-//@Configuration
-
-public class SecurityConfig2 extends WebSecurityConfigurerAdapter {
+@Configuration
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private UserDetailsService userDetailsService;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-            auth.userDetailsService(userDetailsService).passwordEncoder(password());
+        auth.userDetailsService(userDetailsService).passwordEncoder(password());
     }
 
     @Bean
     PasswordEncoder password(){
         return new BCryptPasswordEncoder();
     }
+
 }
